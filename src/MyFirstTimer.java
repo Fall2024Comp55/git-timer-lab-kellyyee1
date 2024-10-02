@@ -31,8 +31,8 @@ public class MyFirstTimer extends GraphicsProgram implements ActionListener {
         myLabel.move(5, 0);
         
         if (numTimes >= 10) {
-            timer.stop(); // Stop the timer
-            return; // Exit the method
+            timer.stop(); 
+            return; 
         }
     }
 	
