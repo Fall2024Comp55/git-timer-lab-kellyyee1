@@ -29,11 +29,10 @@ public class BallLauncher extends GraphicsProgram{
 	public void mousePressed(MouseEvent e) {
 		for (GOval ball : balls) {
             if (ball.getX() < 100) {
-                return; // Ignore the mouse press if a ball is within the limit
+                return;
             }
         }
 
-        // If no ball is within the limit, create a new ball
         GOval ball = makeBall(SIZE / 2, e.getY());
         add(ball);
         balls.add(ball);
